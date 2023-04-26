@@ -4,7 +4,7 @@ class calc{
     public int add(int a,int b){
         int result=a+b;
         return result;
-    }
+    };
     public float add(float a,float b){
         float result=a+b;
         return result;
