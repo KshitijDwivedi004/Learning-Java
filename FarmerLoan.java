@@ -1,4 +1,5 @@
 import java.util.Scanner;
+//  calcution of farmer loan
 
  class farmer {
     int pa;
