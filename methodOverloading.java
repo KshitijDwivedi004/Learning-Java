@@ -14,6 +14,7 @@ class calc{
         return result;
     }
 }
+//  example of method overloading
 public class methodOverloading {
     public static void main(String[] args) {
         
