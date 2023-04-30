@@ -1,9 +1,9 @@
 class student{
     private int age;
     private String name;
-    void setdata(){
-        age = 10;
-        name= "kshitij";
+    void setdata(String name,int age){
+        this.age = 10;
+        this.name= "kshitij";
     }
     void show(){
         System.out.println(name+" "+age);
@@ -12,7 +12,10 @@ class student{
 public class Encapsulation {
     public static void main(String[] args) {
         student k = new student();
-        k.setdata();
-        k.show();
+        student p = new student();
+        // k.setdata();
+        // k.show();
+        p.setdata("pranav",19);
+        p.show();
     }
 }
