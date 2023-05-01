@@ -1,34 +1,71 @@
-class Human{
-    int age;
-    private String Name;
-    Human(){
-        System.out.println("Human constructor called !");
-    }
-    void eat(){
-        age=10;
-        System.out.println("human eats thrice a day! ");
-        System.out.println(age);
+// package OopsinJava;
+class Areoplane{
+    public void takeoff(){
+        System.out.println("Areoplane is taking off");
+
+    }public void fly(){
+        System.out.println("Areoplane if flying");
+        
     }
 }
-class Students extends Human{
-    int age;
-    Students(){
-        // super()  -> because of this Human() constructor is called :
-        System.out.println("Student constructor called !!");
-    }
-    void eat(){
-        age=20;
+class f5_AirCraft extends Areoplane{
+    public void takeoff(){
+        System.out.println("f5_AirCraft is taking off");
 
-        System.out.println("Student eat thrice a day !");
-        // System.out.println("your name is ;"+Name);
-        System.out.println(age);
+    }public void fly(){
+        System.out.println("f5_AirCraft if flying");
+        
+    }
+    }
+class PassengerPlane extends Areoplane{
+    public void takeoff(){
+        System.out.println("PassengerPlane is taking off");
+
+    }public void fly(){
+        System.out.println("PassengerPlane if flying");
+        
     }
 }
-public class inheritance {
+class FighterPlane extends Areoplane{
+    public void takeoff(){
+        System.out.println("FighterPlane is taking off");
 
+    }public void fly(){
+        System.out.println("FighterPlane if flying");
+        
+    }
+}
+class AirPort{
+    public void PrintAll(Areoplane add){
+        add.takeoff();
+        add.fly();
+        System.out.println("------------------------->");
+    }
+}
+
+
+public class Inheritance {
     public static void main(String[] args) {
-    Students raj =new Students();
-    raj.eat();
-    
+        f5_AirCraft ar = new f5_AirCraft();
+        PassengerPlane pp = new PassengerPlane();
+        FighterPlane fp = new FighterPlane();
+
+        // System.out.println("------------------------------");
+        // ar.takeoff();
+        // ar.fly();
+        
+        // System.out.println("------------------------------");
+        // pp.takeoff();
+        // pp.fly();
+        
+        // System.out.println("------------------------------");
+        // fp.takeoff();
+        // fp.fly();
+        System.out.println("------------------------------");
+        AirPort ap =new AirPort();
+        ap.PrintAll(ar);
+        ap.PrintAll(pp);
+        ap.PrintAll(fp);
+
     }
 }
