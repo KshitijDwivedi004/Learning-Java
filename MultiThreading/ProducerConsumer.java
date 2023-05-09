@@ -1,4 +1,4 @@
-// producer & Consumer
+// producer & Consumer MultiThreading
 class Queue{
     int v;
     boolean flag=false;
