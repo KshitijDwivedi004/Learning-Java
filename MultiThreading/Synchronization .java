@@ -1,4 +1,4 @@
-// learning Synchronisation keyWord
+// learning Synchronisation keyword
 class Car implements Runnable{
 
 // {   StringBuilder name= new StringBuilder();
